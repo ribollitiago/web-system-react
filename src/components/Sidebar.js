@@ -43,13 +43,13 @@ function Sidebar() {
           </li>
           <ul className="menu-links">
             <li className="home-link">
-              <a href="#">
+              <a href="/home">
                 <i className="icon"><BiHomeAlt /></i>
                 <span className="text nav-text">Home</span>
               </a>
             </li>
             <li className="register-link">
-              <a href="#">
+              <a href="/register">
                 <i className="icon"><BiUserPlus /></i>
                 <span className="text nav-text">Cadastro</span>
               </a>
@@ -71,7 +71,7 @@ function Sidebar() {
 
         <div className="bottom-content">
           <li className="logout-link">
-            <a href="#">
+            <a href="/login">
               <i className="icon"><BiLogOut /></i>
               <span className="text nav-text">Sair</span>
             </a>

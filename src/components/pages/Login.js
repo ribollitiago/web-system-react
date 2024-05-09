@@ -1,8 +1,8 @@
 import { signInWithEmailAndPassword } from "firebase/auth";
 import React, { useState } from "react";
-import { auth } from "./Firebase";
+import { auth } from "../Firebase";
 import { toast } from "react-toastify";
-import '../App.css';
+import '../../App.css';
 
 function Login() {
   const [email, setEmail] = useState("");

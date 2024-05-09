@@ -4,6 +4,7 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom"
 
 import Login from "./components/Login"
+import HomePage from "./components/Home"
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <div className="auth-inner">
           <Routes>
             <Route path="/" element={<Login />} />
+            <Route path="/home" element={<HomePage/>}/>
           </Routes>
         </div>
       </div>

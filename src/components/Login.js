@@ -13,7 +13,7 @@ function Login() {
     try {
       await signInWithEmailAndPassword(auth, email, password);
       console.log("User logged in Successfully");
-      window.location.href = "/profile";
+      window.location.href = "/home";
       toast.success("User logged in Successfully", {
         position: "top-center",
       });
@@ -52,7 +52,7 @@ function Login() {
         </div>
         <div className="remember-forgot">
           <label>
-            <input type="checkbox" disabled={true} /> Salvar usuário
+            <input type="checkbox" disabled={false} /> Salvar usuário
           </label>
           <a href="#">Recuperar senha?</a>
         </div>

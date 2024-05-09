@@ -1,35 +1,23 @@
-import './App.css'; // Importando os estilos
-import { useEffect } from 'react';
-import { login, isEmailValid } from './Login'; // Importando as funções de login
+import React from 'react';
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom"
+
+import Login from "./components/Login"
 
 function App() {
-  useEffect(() => {
-    // Inicialize o Firebase aqui, se necessário
-  }, []);
-
   return (
-    <div className="wrapper">
-      <form action="">
-        <h1>Login</h1>
-        <div className="input-box">
-          <input id="email" type="text" onChange={() => isEmailValid()} placeholder="Nome" required />
-          <i className='bx bx-user'></i>
+  <Router>
+    <div className="App">
+      <div className="auth-wrapper">
+        <div className="auth-inner">
+          <Routes>
+            <Route path="/" element={<Login />} />
+          </Routes>
         </div>
-        <div className="input-box">
-          <input id="password" type="password" onChange={() => isEmailValid()} placeholder="Senha" required />
-          <i className='bx bx-lock-alt'></i>
-        </div>
-        <div className="remember-forgot">
-          <label><input type="checkbox" disabled="true" />Salvar usuário</label>
-          <a href="#">Recuperar senha?</a>
-        </div>
-        <button id="button" type="button" className="btn" disabled="true" onClick={() => login()}>Login</button>
-
-        <div className="register-link">
-          <p>Não possui conta? <a href="#">Registrar</a></p>
-        </div>
-      </form>
+      </div>
     </div>
+  </Router>
   );
 }
 

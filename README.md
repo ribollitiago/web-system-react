@@ -1,16 +1,15 @@
-# web-system-react
+# Web System React 🌐
 
-Full-featured React web system with Firebase authentication, sidebar navigation, and a modular page structure.
+A clean, modular web application template featuring authentication, responsive sidebar navigation, and dashboard routing built with **React** and **Firebase**.
 
 ---
 
 ## Features
 
-- 🔐 **Authentication** — sign-up and login flows powered by Firebase Auth
-- 🗂️ **Sidebar navigation** — persistent side menu for quick access to all sections
-- 🏠 **Home dashboard** — central landing page after authentication
-- 🔀 **React routing** — client-side navigation between pages
-- 📱 **Responsive layout** — adapts to different screen sizes
+- **Authentication Flow** — Pre-configured Sign-In and Registration views integrated with Firebase Auth.
+- **Modular Navigation** — Collapsible sidebar layout with active route management.
+- **Theme & Brand Support** — Support for distinct visual themes and iconography.
+- **Component Architecture** — Clean separation of pages, views, and reusable stateful components.
 
 ---
 
@@ -18,30 +17,21 @@ Full-featured React web system with Firebase authentication, sidebar navigation,
 
 | Layer | Technology |
 |---|---|
-| Frontend | React (Create React App) |
-| Authentication | Firebase Auth |
+| Frontend | React |
 | Routing | React Router |
-| Deployment | — |
-
----
-
-## Project Structure
-
-```
-src/
-├── components/
-│   └── Sidebar/       # Persistent sidebar navigation component
-├── pages/
-│   ├── Home/          # Main dashboard page
-│   ├── Login/         # Login page
-│   └── Register/      # User registration page
-├── firebase.js        # Firebase initialization & config
-└── App.js
-```
+| Authentication | Firebase Authentication |
+| Styling | Modular CSS3 |
 
 ---
 
 ## Getting Started
+
+### Prerequisites
+
+- Node.js (v18+)
+- npm or yarn
+
+### Installation & Run
 
 ```bash
 # Clone the repository
@@ -50,15 +40,6 @@ cd web-system-react
 
 # Install dependencies
 npm install
-
-# Configure Firebase
-# Create a .env file at the root with your Firebase project credentials:
-# REACT_APP_API_KEY=...
-# REACT_APP_AUTH_DOMAIN=...
-# REACT_APP_PROJECT_ID=...
-# REACT_APP_STORAGE_BUCKET=...
-# REACT_APP_MESSAGING_SENDER_ID=...
-# REACT_APP_APP_ID=...
 
 # Start development server
 npm start
@@ -69,4 +50,4 @@ npm start
 ## Author
 
 **Tiago Ribolli Blasquez**  
-[linkedin.com/in/tiagoribolli](https://www.linkedin.com/in/tiago-ribolli-blasquez-060810244) · [github.com/ribollitiago](https://github.com/ribollitiago)
+[linkedin.com/in/tiagoribolli](https://linkedin.com/in/tiago-ribolli-blasquez-060810244) · [github.com/ribollitiago](https://github.com/ribollitiago)
